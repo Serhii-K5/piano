@@ -64,6 +64,42 @@ let playNote = (key) => {
         key.classList.remove('active')
     });
 }
+
+["d", "d", "f", "d", "s", "d", "f", "s", "d", "f", "d", "s", "a"].map((el) => {
+  let timerId = setInterval(() => {
+    const existingButtton = el.toLocaleUpperCase();
+    console.log(existingButtton);
+    playNote(existingButtton);
+
+    //   let referenceTime = new Date(inputText.value) - new Date();
+    //   btnStart.disabled = true;
+    //   // creating a shimmering effect
+    //   flag *= -1;
+    //   divTimer.style.color = flag < 0 && referenceTime < 5500 ? "red" : "black";
+    //   if (flag < 0) {
+    //     return;
+    //   }
+
+    //   if (referenceTime >= 0) {
+    //     let conversionResult = convertMs(referenceTime);
+    //     spanDays.textContent = conversionResult.days;
+    //     spanHours.textContent = conversionResult.hours
+    //       .toString()
+    //       .padStart(2, "0");
+    //     spanMinutes.textContent = conversionResult.minutes
+    //       .toString()
+    //       .padStart(2, "0");
+    //     spanSeconds.textContent = conversionResult.seconds
+    //       .toString()
+    //       .padStart(2, "0");
+    //   } else {
+    //     // window.alert('Countdown finished');
+    //     Notiflix.Notify.success("Countdown finished");
+    //     clearInterval(timerId);
+    //   }
+  }, 500);
+});
+
 //
 //
 //

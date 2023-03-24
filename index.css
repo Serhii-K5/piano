@@ -46,7 +46,7 @@ body {
 }
 
 .piano {
-    margin-top: 200px;
+    margin-top: 10%;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -89,4 +89,103 @@ body {
     background-color: #333;
 }
 
+/* ----- */
+.nav{
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+button {
+  width: 100px;
+  margin-bottom: 1%;
+  /* margin-left: auto; */
+  padding: 10px;  
+  background-color: darkgrey;
+}
+
+.autoplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+
+  /* margin: 5% 50% -20% 50%; */
+}
+
+.btn_autoplay {
+  width: 100px;
+  margin-bottom: 1%;
+  /* margin-left: auto; */
+  padding: 10px;  
+  background-color: darkgrey;  
+}
+
+.btn_autoplay:hover {
+  background-color:cornflowerblue;
+}
+
+.input{
+  color: antiquewhite;
+}
+
+.ta_autoplay {
+
+}
+
+nav {
+margin: 100px 0;
+background-color: #E64A19;
+}
+/* убираем отступы и поля, а также list-style для "ul",
+* и добавляем "position:relative" */
+nav ul {
+padding: 0;
+margin: 0;
+list-style: none;
+position: relative;
+}
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+margin: 0 -7px 0 0;
+display:inline-block;
+background-color: #E64A19;
+}
+/* стилизуем ссылки */
+nav a {
+display:block;
+padding: 0 10px;
+color:#FFF;
+font-size:20px;
+line-height: 60px;
+text-decoration:none;
+}
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+background-color: #000000;
+}
+nav ul ul {
+display: none; 
+position: absolute; 
+top: 100%;
+}
+nav ul li:hover > ul { 
+    display:inherit;
+}
+nav ul ul li {
+min-width:170px;
+float:none;
+display:list-item; 
+position: relative;
+}
+
+nav ul ul ul { 
+    position: absolute;
+    top:0;
+left:100%;
+}
+
 /* End of piano app css */
+
